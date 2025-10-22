@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --cor_principal: #22d4fd;
+  --cor_fonte: #f6f6f6;
+  --cor_footer: #000000;
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-secundaria: "Krona One", sans-serif;
+  /*variáveis CSS*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor_footer);
+  color: var(--cor_fonte);
+}
+
+
+
+/* 1° index */
+/* HEADER */
+header{
+  padding: 2% 0% 0% 15%;
+}
+
+.header-nav {
+  display: flex;
+  gap: 180px;
+}
+
+.header-nav-a {
+  color: var(--cor_principal);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--fonte-principal);
+  text-decoration: none;
+}
+
+.header-nav-a:hover {
+  color: #4b8c9b;
+}
+/* HEADER */
+
+/* MAIN */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 15%;
+  gap: 82px;
+}
+
+.main-section {
+  display: flex;
+  width: 50%;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.main-section-index-h1 {
+  font-size: 2.25rem;
+  font-family: var(--fonte-secundaria);
+}
+
+span {
+  color: var(--cor_principal);
+}
+
+.main-section-index-p {
+  font-size: 1.5rem;
+  font-family: var(--fonte-principal);
+}
+
+.main-div-botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-div-link {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--cor_principal);
+  width: 50%;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor_fonte);
+  font-family: var(--fonte-principal);
+}
+
+.eu {
+  width: 50%;
+}
+/* MAIN */
+
+/* FOOTER */
+footer {
+  color: var(--cor_footer);
+  background-color: var(--cor_principal);
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* FOOTER */
+/* 1° index */
+
+
+/*2° index*/
+.main-section-div-sobremim {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-section-div-sobremim-h1 {
+  color: var(--cor_fonte);
+  font-size: 2.25rem;
+  font-family: var(--fonte-secundaria);
+}
+
+.main-section-div-sobremim-h4_01 {
+  color: var(--cor_fonte);
+  font-size: 1.5rem;
+  font-family: var(--fonte-principal);
+}
+
+.main-section-div-sobremim-h4_02 {
+  color: var(--cor_fonte);
+  font-size: 1.5rem;
+  font-family: var(--fonte-principal);
+}
+
+@media(max-width:1200px){ /*quando for abaixo de 1200 de largura, entra as especificações abaixo*/
+  header {padding: 5%;}
+  .header-nav {
+    justify-content: center;
+  }
+  main {
+    flex-direction: column;
+  }
+  .main-section-index-h1{
+    font-size: 1.5rem;
+  }
+  .main-section-index-p{
+    font-size: 1rem;
+  }
+  .main-div-link{
+    width: 100%;
+  }
+}
+/*media é uma condição*/
