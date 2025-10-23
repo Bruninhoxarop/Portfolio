@@ -101,6 +101,7 @@ span {
 
 .eu {
   width: 50%;
+  border-radius: 8px;
 }
 /* MAIN */
 
@@ -144,21 +145,36 @@ footer {
 }
 
 @media(max-width:1200px){ /*quando for abaixo de 1200 de largura, entra as especificações abaixo*/
-  header {padding: 5%;}
+  header {
+    padding: 5%;
+  }
   .header-nav {
     justify-content: center;
+    align-items: center;
   }
   main {
-    flex-direction: column;
+    padding: 8% 8% 30% 8%;
+    gap: 10px;
+    justify-content: start;
   }
   .main-section-index-h1{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .main-section-index-p{
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   .main-div-link{
     width: 100%;
+    font-size: 0.75rem;
+    align-items: center;
+    padding: 3%;
+  }
+  .main-section{
+    gap: 20px;
+  }
+  .main-div-botoes{
+   flex-direction: row;
+   gap: 16px;
   }
 }
 /*media é uma condição*/
