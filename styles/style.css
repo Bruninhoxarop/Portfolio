@@ -153,14 +153,23 @@ footer {
     align-items: center;
   }
   main {
-    padding: 8% 8% 30% 8%;
+    padding: 8% 8% 50% 8%;
     gap: 10px;
     justify-content: start;
   }
   .main-section-index-h1{
     font-size: 1.25rem;
   }
+  .main-section-div-sobremim-h1_{
+    font-size: 1.25rem;
+  }
   .main-section-index-p{
+    font-size: 0.75rem;
+  }
+  .main-section-div-sobremim-h4_01{
+    font-size: 0.75rem;
+  }
+  .main-section-div-sobremim-h4_02{
     font-size: 0.75rem;
   }
   .main-div-link{
@@ -171,6 +180,9 @@ footer {
   }
   .main-section{
     gap: 20px;
+  }
+  .main-section-div-sobremim{
+    gap: 10px;
   }
   .main-div-botoes{
    flex-direction: row;
